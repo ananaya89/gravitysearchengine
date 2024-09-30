@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;  /* Prevents page scrolling */
+    height: 100vh;
+}
+
+h1, .search-bar, .history-section {
+    position: absolute;  /* Allows the elements to be moved around by physics */
+    left: 50%;           /* Initial centering before gravity kicks in */
+    transform: translateX(-50%);
+}
+
+h1 {
+    font-size: 36px;
+}
+
+.search-bar input {
+    padding: 10px;
+    font-size: 16px;
+    width: 70%;
+}
+
+.search-bar button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#clearHistoryBtn {
+    background-color: #dc3545;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
